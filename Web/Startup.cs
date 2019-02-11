@@ -26,6 +26,10 @@ namespace Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // configure as linhas abaixo e sete o connection string conforme o seu banco de dados
+            // var connection = @"Server=DESKTOP-G7PS8NC;Database=EFGetStarted.AspNetCore.NewDb;Trusted_Connection=True;ConnectRetryCount=0";
+            // var serviceProvider = new ServiceCollection().AddEntityFrameworkSqlServer().BuildServiceProvider();
+            // services.AddDbContext<LivrariaContext>(opt => opt.UseSqlServer(connection, b => b.MigrationsAssembly("Web")).UseInternalServiceProvider(serviceProvider)); // injecao de dependencia do contexto
             services.AddDbContext<LivrariaContext>(opt => opt.UseInMemoryDatabase("Livraria")); // injecao de dependencia do contexto
             services.AddScoped(typeof(ILivroRepository), typeof(LivroRepository));
             services.AddScoped(typeof(ILivroService), typeof(LivroService));
