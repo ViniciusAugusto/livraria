@@ -1,5 +1,7 @@
 # Livraria Manager
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bd6ad6ef0356428195957b8f80c98705)](https://app.codacy.com/app/ViniciusAugusto/livraria?utm_source=github.com&utm_medium=referral&utm_content=ViniciusAugusto/livraria&utm_campaign=Badge_Grade_Dashboard)
+
 Aplicação de exemplo de uso de DDD, separação de camadas e injeção de dependência
 
 ## Instalação
